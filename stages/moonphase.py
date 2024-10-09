@@ -8,6 +8,7 @@ Cf. http://en.wikipedia.org/wiki/Lunar_phase#Lunar_phase_calculation
 
 import math, decimal, datetime
 
+
 def phase(datetime_str=None):
     dec = decimal.Decimal
     if datetime_str is None: 

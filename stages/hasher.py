@@ -1,9 +1,8 @@
-# image_hasher.py
-
 from PIL import Image
 import hashlib
 import base64
 import imagehash
+
 
 def generate_image_id(image: Image, size=(256, 256), hash_length=16):
     """Generate a shorter unique ID for an image by truncating the SHA256 hash."""
@@ -15,6 +14,7 @@ def generate_image_id(image: Image, size=(256, 256), hash_length=16):
     except Exception as e:
         print(f"Error processing image: {e}")
         return None
+    
 
 def generate_md5_image_id(image: Image, size=(256, 256)):
     """Generate a shorter unique ID for an image using MD5 hash."""
@@ -27,6 +27,7 @@ def generate_md5_image_id(image: Image, size=(256, 256)):
         print(f"Error processing image: {e}")
         return None
 
+
 def generate_base64_image_id(image: Image, size=(256, 256)):
     """Generate a shorter unique ID for an image using Base64 encoding."""
     try:
@@ -38,6 +39,7 @@ def generate_base64_image_id(image: Image, size=(256, 256)):
     except Exception as e:
         print(f"Error processing image: {e}")
         return None
+
 
 def generate_short_perceptual_image_id(image: Image, hash_length=8):
     """Generate a short perceptual hash for an image."""

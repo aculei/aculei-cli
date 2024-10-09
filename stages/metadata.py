@@ -5,8 +5,10 @@ import re
 
 from stages import moonphase
 
+
 TAGS_FOR_CAMERA = ["Keywords", "Subject", "WeightedFlatSubject"]
 TAGS_FOR_DATETIME = ["CreateDate", "DateCreated"]
+
 
 def get_image_metadata(img: Image):
     """Get metadata from an image file."""
@@ -47,4 +49,3 @@ def get_image_metadata(img: Image):
         except Exception as e:
             print(e)
             return None
-

@@ -15,6 +15,7 @@ DIRECTORY = "./images"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 app = typer.Typer(help="aculei cli 🦔", add_completion=False)
 
+
 @app.command()
 def aculei(
     ocr: bool = typer.Option(False, help="Enable optical character recognition"),
