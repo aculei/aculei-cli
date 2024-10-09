@@ -4,7 +4,7 @@
 ![python](https://img.shields.io/badge/Python-3776AB.svg?style=plain&logo=Python&logoColor=white)
 ![TYOER](https://img.shields.io/badge/Typer-000000.svg?style=plaine&logo=Typer&logoColor=white)
 
-Cli tool to process hunter-camera images.
+Cli tool to generate a dataset from hunter-camera images
 
 - [x] Generate unique ids
 - [x] Read metadata using [exiftool](https://exiftool.org/)
@@ -29,7 +29,9 @@ pip install -r requirements.txt
 ## Run 🚀
 
 ```console
-python3 main.py
+python3 main.py --help
 ```
+
+![screenshot](screenshot.png)
 
 A sample folder containing some images is available under `./images`
