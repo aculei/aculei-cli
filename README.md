@@ -26,12 +26,21 @@ Install requirements
 pip install -r requirements.txt
 ```
 
-## Run 🚀
+## Run
+
+### The full cli
 
 ```console
-python3 main.py --help
+python aculei-cli.py --help
 ```
 
-![screenshot](screenshot.png)
-
 A sample folder containing some images is available under `./images`
+
+### Datframe to sql conversion
+
+> [!WARNING]
+> You may need to downgrade pandas `pip install psycopg2-binary~=2.9.9 SQLAlchemy~=2.0.25 pandas~=2.2.0`
+
+```console
+python to_sql.py
+```
